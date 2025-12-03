@@ -6,9 +6,9 @@ class CompProductoResumen extends Component {
         var urlProducto = "PageProducto/" + this.props.pDatosDelProducto.id;
         return <div className="col mb-4">
             <div className="card h-100">
-                <a href="#">
+                <Link to="/">
                     <img src={urlImagen} className="card-img-top" alt="..." />
-                </a>
+                </Link>
                 <div className="card-body">
                    <Link className="text-primary" to={urlProducto}> 
                         <h5 className="card-title">{this.props.pDatosDelProducto.nombre}</h5>

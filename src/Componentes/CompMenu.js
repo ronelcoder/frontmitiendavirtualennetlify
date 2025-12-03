@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import { BrowserRouter as router, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class CompMenu extends Component {
     render() {
         return <nav className="navbar navbar-expand-md navbar-dark bg-dark mb-4">
             <div className="container">
                 <span className="float-left">
-                    <a className="navbar-brand" href="#">
+                    <Link className="navbar-brand" to="/">
                         <img src="imagenes/logo.png" width="250" height="35" alt="" />
-                    </a>
+                    </Link>
                 </span>
                 <span className="float-right">
                     <ul className="btn btn-group">
